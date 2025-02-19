@@ -239,3 +239,103 @@ html {
 .sobremi button:hover .overlay {
     width: 100%;
 }
+
+/* Sección Habilidades */
+.skills {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1));
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #c15353;
+}
+
+.skills .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills .fila .col {
+    width: 45%;
+    padding: 20px;
+    background: #252A2E;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skills .fila .col:hover {
+    transform: scale(1.05);
+    background: #c15353;
+}
+
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .fila .col h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.skills .icon-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills .icon-skill img {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+
+.skills .icon-skill img:hover {
+    transform: scale(1.1);
+}
+
+.skills .skill {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skills .skill span {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.skills button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.skills button:hover {
+    background-color: #c15353;
+    border-color: #c15353;
+}
