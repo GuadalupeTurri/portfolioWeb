@@ -339,3 +339,110 @@ html {
     background-color: #c15353;
     border-color: #c15353;
 }
+
+/*seccion css proyectos*/
+#portfolio {
+    padding: 3rem 0;
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.605), rgba(30, 35, 38, 0.979)),
+        url(img/fondo.jpg);
+    background-size: cover;
+    /* Fondo oscuro */
+}
+
+.contenido-seccion {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenido-seccion h5 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+
+}
+
+/* Galería de proyectos */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom al pasar el ratón */
+}
+
+/* Imágenes de los proyectos */
+.proyecto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(37, 42, 46, 0.7);
+    /* Fondo oscuro con opacidad */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+    /* Mostrar el overlay al pasar el ratón */
+}
+
+.overlay h6 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #c15353;
+    /* Título con color rojo */
+}
+
+.overlay p {
+    font-size: 1rem;
+    color: #fff;
+    /* Texto en blanco */
+}
+
+/* Estilo de los proyectos con distintos colores */
+.proyecto:nth-child(1) img {
+    filter: brightness(80%);
+    /* Tono más oscuro para el primer proyecto */
+}
+
+.proyecto:nth-child(2) img {
+    filter: brightness(90%);
+    /* Tono ligeramente más claro */
+}
+
+.proyecto:nth-child(3) img {
+    filter: brightness(85%);
+    /* Tono ligeramente más oscuro */
+}
