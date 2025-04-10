@@ -211,25 +211,17 @@ html {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .sobremi button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
     width: fit-content;
-=======
-.sobremi a button {
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
->>>>>>> f1070e2 (contacto terminado html/css)
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
     position: relative;
-<<<<<<< HEAD
     z-index: 10;
 }
 
@@ -248,9 +240,7 @@ html {
     width: 100%;
 }
 
-=======
-    transition: background-color 0.3s, color 0.3s;
-}
+
 
 .sobremi a button:hover {
     background-color:#c15353; 
@@ -262,10 +252,6 @@ html {
 }
 
 
-
-
-  
->>>>>>> f1070e2 (contacto terminado html/css)
 /* Sección Habilidades */
 .skills {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1));
@@ -367,11 +353,9 @@ html {
 }
 
 /*seccion css proyectos*/
-<<<<<<< HEAD
-#portfolio {
-=======
+
 #proyectos {
->>>>>>> f1070e2 (contacto terminado html/css)
+
     padding: 3rem 0;
     background: linear-gradient(to top, rgba(30, 35, 38, 0.605), rgba(30, 35, 38, 0.979)),
         url(img/fondo.jpg);
@@ -389,11 +373,9 @@ html {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-<<<<<<< HEAD
     color: #fff;
-=======
     color:#c15353;
->>>>>>> f1070e2 (contacto terminado html/css)
+
 
 }
 
@@ -479,9 +461,7 @@ html {
 .proyecto:nth-child(3) img {
     filter: brightness(85%);
     /* Tono ligeramente más oscuro */
-<<<<<<< HEAD
-}
-=======
+
 }
 
 /*css de contacto*/
@@ -531,4 +511,4 @@ html {
   .contacto button:hover {
     background-color:#000;
   }
->>>>>>> f1070e2 (contacto terminado html/css)
+
