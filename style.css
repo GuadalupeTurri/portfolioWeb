@@ -211,46 +211,56 @@ html {
     margin-bottom: 10px;
 }
 
-.sobremi button {
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
+button {
     position: relative;
-    z-index: 10;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:#c15353;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
 }
 
-.sobremi button .overlay {
+/* Estilo del icono */
+button i {
+    margin-left: 10px;
+}
+
+/* Efecto de overlay */
+button .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #c15353;
-    z-index: -1;
-    transition: 1s;
-}
-
-.sobremi button:hover .overlay {
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-
-
-.sobremi a button:hover {
-    background-color:#c15353; 
-    color: #000; 
+/* Cambio de color y efecto al pasar el cursor */
+button:hover {
+    background-color:#000;
+    transform: scale(1.05);
 }
 
-.sobremi a {
-    text-decoration: none;
+/* Mostrar overlay al pasar el cursor */
+button:hover .overlay {
+    opacity: 1;
 }
 
+/* Estilo para el enlace (en caso de que se use) */
+button a {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Mantener el color del texto igual */
+}
 
 /* Sección Habilidades */
 .skills {
