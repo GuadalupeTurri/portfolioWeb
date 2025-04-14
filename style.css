@@ -465,40 +465,69 @@ html {
 }
 
 /*css de contacto*/
-.contacto {
+#contacto {
     padding: 50px 20px;
     background-color: #1e2326;
-    text-align: center;
     color: #ccc;
-  }
-  
-  .contacto h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
     text-align: center;
-    padding: 20px 0;
+}
+
+/* Estilo para el título */
+#contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous', sans-serif;
     color: #c15353;
-  }
-  
-  .contacto form {
+    padding: 20px 0;
+}
+
+/* Estilo para el formulario */
+#contacto form {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .contacto input,
-  .contacto textarea {
+}
+
+/* Estilo para los grupos de entrada (input, textarea) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Estilo para las etiquetas (label) */
+.input-group label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de texto (input, textarea) */
+.input-group input,
+.input-group textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
-    resize: none;
-  }
-  
-  .contacto button {
-    background-color:#c15353;
+    background-color: #2a2f34;
+    color: #fff;
+    width: 100%;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Efecto de foco para los campos de texto */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #c15353;
+    background-color: #1e2326;
+    outline: none;
+}
+
+/* Estilo para el botón de enviar */
+#contacto button {
+    background-color: #c15353;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -506,9 +535,9 @@ html {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .contacto button:hover {
-    background-color:#000;
-  }
+}
 
+/* Efecto de hover para el botón */
+#contacto button:hover {
+    background-color: #000;
+}

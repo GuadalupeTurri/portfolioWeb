@@ -184,7 +184,6 @@
         </div>
     </section>
     <!--proyectos-->
-    <section id="portfolio" class="portfolio">
 
     <section id="proyectos" class="proyectos">
 
@@ -219,6 +218,29 @@
 
         </div>
     </section>
+    <section id="contacto" class="contacto">
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar_formulario.php" method="post">
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
 
 
 
